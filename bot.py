@@ -24,5 +24,5 @@ def get_balance(message):
     balance = rpc_connection.getbalance()
     bot.reply_to(message, f"Баланс кошелька: {balance}")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     bot.infinity_polling()
